@@ -1,0 +1,13 @@
+{
+    "appPageId": "f43ec4c7-3496-a36b-da88-c166b67ff254",
+    "appPageName": "carousel",
+    "componentName": "carouselComponent",
+    "selectorName": "bh-carousel",
+    "htmlFileName": "carousel.template.html",
+    "tsFileName": "carousel.component.ts",
+    "bkd": {
+        "designerHtml": "",
+        "designerReference": {},
+        "ts": ""
+    }
+}

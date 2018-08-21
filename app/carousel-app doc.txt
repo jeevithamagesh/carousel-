@@ -1,0 +1,57 @@
+
+
+
+
+
+# **Guide**
+
+## **Overview**
+
+-   Carousel is used to show images in slideshow or carousel
+-   This template is integrated with responsive feature so it’ll display gorgeously on all screen type, mobile or computer
+ -  In addition, our template will auto change size to fit the image’s size and
+    the position you using it so you can use it anywhere, with any images
+
+## **Use Case**
+
+-   Structural markup ensures that the content of a carousel can be used in a variety of situations
+-    For example, a carousel with proper markup could be presented as a list of articles on a mobile device
+   -  Carousels are often used as a gallery to display a series of images
+  -   However, more complex content, such as teasers, articles,
+    or entire sections of web pages can also be shown inside carousels
+
+## **How to Use**
+
+**Step 1** : Create a component(Example:carousel)
+**Step  2** : In TS file 
+-  Import services: one service based on user requirements(Example: imageservice) and another is carousel service which contains observable media-used for tracking the responsiveness
+- Inject the two services in 'constructor'
+- In **component class**, declare the variables used
+
+ `imagedata : String ;`
+                  `  limit : any ;`
+- In **ngOnInit**
+`this.imageData = this.imgService.getImages();`
+>**Note:** imagedata is variable used in imageservice
+ > imgservice is the keyword for the service
+  - write a function
+
+`ngDoCheck() { this.limit = this.cService.assignLimit(1, 2, 4); }`
+
+  >**Note:** limit - is variable used in carouselservice
+                    cservice- is the keyword for the service
+                    ngDoCheck-used for checking the changes for every time
+- In **HTML** file
+Drag and drop a custom html to call the child component
+`<bh-carousel [imageData]="imageData"[limitImage]="limit" *ngIf="imageData"></bh-carousel>`
+>**Note** :‘carousel ’is the name of the child component.
+## **Supported Platforms**
+
+-   Browser
+-  IOS
+ -  Android 
+
+# **Screenshots:**
+## **Iphone 6/7/8 View**
+
+

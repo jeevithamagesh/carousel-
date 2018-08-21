@@ -1,0 +1,45 @@
+{
+    "874b6edb-11ad-5255-dc30-784d7de15551": {
+        "dataModelId": "874b6edb-11ad-5255-dc30-784d7de15551",
+        "name": "carouselmodel",
+        "description": "datamodel",
+        "dataSource": "new-rt",
+        "fields": [
+            {
+                "name": "imgSrc",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "imgPrice",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "imgDesc",
+                "fieldType": 2,
+                "isArray": false
+            },
+            {
+                "name": "imgHeader",
+                "fieldType": 2,
+                "isArray": false
+            }
+        ]
+    },
+    "dac8c708-3ede-d816-388c-7aaac10a5a8b": {
+        "dataModelId": "dac8c708-3ede-d816-388c-7aaac10a5a8b",
+        "name": "imagedatas",
+        "description": "model",
+        "dataSource": "new-rt",
+        "fields": [
+            {
+                "name": "image",
+                "fieldType": 5,
+                "isArray": true,
+                "complexTypeName": "carouselmodel",
+                "complexTypeId": "874b6edb-11ad-5255-dc30-784d7de15551"
+            }
+        ]
+    }
+}

@@ -1,0 +1,195 @@
+/*Importing default angular material css theme. */
+
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+
+$background-color : #3F51B5;
+$headerFooterColor : #273690;
+
+body{
+     background-color: $background-color;
+    font-family: 'Raleway', sans-serif;
+}
+.price-font{
+    font-size: 13px;
+    color: white;
+    padding-left: 5px;
+}
+.fonts{
+    font-family: 'Raleway', sans-serif !important;
+}
+.weight-font{
+    font-weight: bold;
+}
+.top {
+    color: white;
+    font-weight: bold;
+}
+.bottom {
+    margin: -15px 0 5px;
+    color: white;
+    font-weight: bold;
+}
+.imgClass350{
+    height:235px;
+    }
+.imgClass300{
+    height:235px;
+}
+.imgClass250{
+    height:235px;
+}
+.imgClass200{
+    // height:200px;
+    height:222px;
+       }
+.imgClass150{
+    height:220px;
+       
+}
+.google{
+          width: 30px;
+    height: 24px;
+    margin-top: 1%;
+      margin-left:3%
+}
+.twitter{
+                width: 27px;
+    height: 25px;
+    margin-top: 1%;
+    margin-left:3%
+}
+.facebook{
+         width: 27px;
+height: 22px;
+    margin-top: 1%;
+  margin-left:3%;
+}
+.toolbar1{
+   
+   background-color: $headerFooterColor;
+    color: rgba(255,255,255,.87);
+    font-size: 19px !important;
+}
+.imgrowxs{
+    height: 949px;
+}
+.textxs{
+         margin-top: 15% !important;
+    margin-left: 60%;
+    font-size: 14px;
+}
+.rent{
+         font-size: 13px!important;
+}
+hidePlaceHolder .mat-form-field-underline {
+  display: none;
+    }
+.mat-form-field-infix { 
+    border-top: .84375em solid transparent;
+    top: -3.5px;
+    font-size: 14px;
+    padding-left: 1%;
+}
+.mat-form-field-placeholder{
+    padding-left: 15px;
+}
+.footer{
+    background: $headerFooterColor;
+    color: white;
+    bottom: 0px;
+    position: fixed;
+    width:100% !important;
+}
+.mat-icon {
+    background-repeat: no-repeat;
+    display: inline-block;
+    fill: currentColor;
+    height: 25px;
+    width: 24px;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding: 1%;
+}
+ .sidenav{
+     background: rgba(11, 14, 117, 0.72);
+    width: 142px;
+     position: absolute !important;
+     top:56px !important;
+    }
+.mat-checkbox-layout .mat-checkbox-label {
+ line-height: 24px;
+font-size: 72%;
+}
+.mat-checkbox-inner-container {
+    display: inline-block;
+    height: 16px !important;
+    line-height: 0;
+   margin: auto;
+   margin-right: 8px;
+    order: 0;
+    position: relative;
+   vertical-align: middle;
+  white-space: nowrap;
+  width: 17px !important;
+   flex-shrink: 0;
+   }
+.mat-form-field-infix {
+    border-top: .84375em solid transparent;
+    top: -3.5px;
+    font-size: 14px;
+    left: 1%;
+  padding-left: 1%;
+}
+.btn-height{
+    height: 39px !important;
+    margin-top: 8%  !important; 
+}
+.arrow-color{
+    background:rgba(0, 0, 0, 0.1) !important;  
+    color: #f7ebeb !important;
+    font-size: 24px !important;
+}
+.header-margin{
+    margin-top: 0px;
+}
+.menu{
+    cursor:pointer !important;
+}
+.btn{
+    font-size: 19px !important;   
+     margin-left: -3% !important;
+}
+.pointer{
+    cursor: pointer;
+}
+.sidenavc{
+    background-color: #3F51B5 !important;
+}
+.rows{
+    padding:2% !important;
+}
+.search{
+    background-color:white !important;  
+     width: 593px !important;
+     height: 39px !important;
+    margin-top: 8%  !important;
+   }
+.sidelist{
+     color:white !important;
+}
+.login{
+    margin-top:71% !important;   
+     width: 100% !important;
+}
+.carrow{
+    margin: 30px 30px 0 30px !important;    
+    padding-top: 11px !important;
+}
+.carcol1{
+    background:white !important;
+    padding:3px !important;
+}
+.small-fab{
+        margin: 35px 12px 0 12px;
+}

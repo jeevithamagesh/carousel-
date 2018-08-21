@@ -1,0 +1,40 @@
+<div fxLayout="column " fxFlex="100" fxLayoutAlign=" " fxShow="true" fxHide="false">
+  <mat-sidenav-container style="  " fullscreen="fullscreen" class="sidenavc">
+    <mat-toolbar class="toolbar1">
+      <div fxLayout="column " fxLayoutAlign="start start" fxShow="true" fxHide="false" fxHide.gt-xs="true" fxFlex.xs="50" fxFlex.gt-xs="0">
+        <mat-icon class="menu" (click)="sidenav.toggle()">menu</mat-icon>
+      </div>
+      <div fxLayout="column " fxFlex="100" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxHide.xs="true">
+        <div fxLayout="row wrap" fxLayoutAlign="end end" fxShow="true" fxHide="false">
+          <button mat-button="" class="fonts">Home</button>
+          <button mat-button="" class="fonts">Dashboard</button>
+          <button mat-button="" class="fonts ">Contact</button>
+        </div>
+      </div>
+      <div fxLayout="column " fxFlex="5" fxLayoutAlign="end end" fxShow="true" fxHide="false" fxLayoutAlign.xs="end end" fxFlex.xs="100">
+        <mat-icon class="pointer" (click)="logout()">power_settings_new</mat-icon>
+      </div>
+    </mat-toolbar>
+    <div fxLayout="row " class="rows" fxFlex="none" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+      <button mat-raised-button="" class="btn-height" color="accent">SEARCH</button>
+      <mat-form-field class="search">
+        <input matInput="" placeholder=" " (keypress)="searchToDo($event)">
+      </mat-form-field>
+    </div>
+    <div fxLayout="row " fxLayoutAlign=" " fxShow="true" fxHide="false">
+      <bh-carousel [imageData]="imageData" [limitImage]="limit" style="width:100%" *ngIf="imageData"></bh-carousel>
+    </div>
+    <footer>
+      <div fxLayout="row " class="footer" fxFlex="100" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+        <p>Copyright &#xA9; 2018 Neutrinos</p>
+      </div>
+    </footer>
+    <mat-sidenav #sidenav="" class="sidenav" (toggle)="sidenav.toggle()">
+      <div fxLayout="column " fxLayoutAlign=" " fxShow="true" fxHide="false">
+        <mat-list>
+          <mat-list-item *ngFor="let list of homeList" class="sidelist pointer fonts">{{list}}</mat-list-item>
+        </mat-list>
+      </div>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

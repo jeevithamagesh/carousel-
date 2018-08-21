@@ -1,0 +1,17 @@
+<div fxLayout="column " fxLayoutAlign="center center" fxShow="true" fxHide="false">
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" fxShow="true" fxHide="false">
+    <mat-card class="login">
+      <div fxLayout="column " fxLayoutGap="1em" fxLayoutAlign="center center" fxShow="true" fxHide="false">
+        <h2>LOGIN</h2>
+        <mat-form-field>
+          <input matInput="" [(ngModel)]="username" name="username" placeholder="Username" required>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput="" [(ngModel)]="password" name="password" type="password" placeholder="Password" required>
+        </mat-form-field>
+        <mat-checkbox [(ngModel)]="remember" required *ngIf="!rememberVal">Remember me</mat-checkbox>
+        <button mat-raised-button="" color="primary" (click)="submit()">LOGIN</button>
+      </div>
+    </mat-card>
+  </div>
+</div>

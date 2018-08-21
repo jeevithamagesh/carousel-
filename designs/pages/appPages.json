@@ -1,0 +1,22 @@
+{
+    "8e784367-8788-83ab-65a3-6d9c6910aebe": {
+        "appPageName": "home",
+        "componentName": "homeComponent",
+        "isEntry": false
+    },
+    "f43ec4c7-3496-a36b-da88-c166b67ff254": {
+        "appPageName": "carousel",
+        "componentName": "carouselComponent",
+        "isEntry": false
+    },
+    "0d99180c-6005-1f92-4d18-9c60c99211e7": {
+        "appPageName": "login",
+        "componentName": "loginComponent",
+        "isEntry": false
+    },
+    "f6e868f1-e786-8156-6027-994d52750be1": {
+        "appPageName": "demo",
+        "componentName": "demoComponent",
+        "isEntry": false
+    }
+}
